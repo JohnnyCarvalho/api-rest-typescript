@@ -26,6 +26,9 @@ import { port } from '../config/default';
 // ➜ Routers
 import router from '../routers/router';
 
+// ➜ Logger
+import Logger from '../config/logger';
+
 // ➜ Database
 import  db  from '../database/db'
 
@@ -42,5 +45,5 @@ app.use(express.json());
 
 app.listen(port, async () => {
     await db();
-    console.log(`The application is running on the port ${port}`);
+    Logger.info(`The application is running on the port ${port}`);
 })
