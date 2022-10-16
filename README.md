@@ -25,3 +25,7 @@ ferramentas no curso:
 - Dotenv
 
 ## Passo a passo para rodar o projeto
+
+Primeiramente deve-se baixar o projeto, em seguida deve-se seguir o seguinte passo a passo: 
+
+- 1 ```➜ npm install config dotenv express express-validator mogoose morgan winston```
