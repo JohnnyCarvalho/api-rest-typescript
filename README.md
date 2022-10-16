@@ -28,8 +28,8 @@ ferramentas no curso:
 
 Primeiramente deve-se baixar o projeto, em seguida deve-se seguir o seguinte passo a passo: 
 
-```➜ npm install config dotenv express express-validator mogoose morgan winston```
+```npm install config dotenv express express-validator mogoose morgan winston```
 
-```javascript
-➜ npm install @types/config @types/express @types/mongoose @types/morgan @types/node ts-node-dev typescript --save-dev
+```
+npm install @types/config @types/express @types/mongoose @types/morgan @types/node ts-node-dev typescript --save-dev
 ```
