@@ -6,6 +6,8 @@ import { MovieModel } from "../models/Movie";
 // Logger
 import Logger from "../../config/logger";
 
+
+// Cria um novo dado no banco, nesse caso, um novo (filme)
 export async function createMovie(req: Request, res: Response) {
   try {
     const data = req.body;
@@ -16,6 +18,7 @@ export async function createMovie(req: Request, res: Response) {
   }
 }
 
+// Seleciona um filme por ID
 export async function findMovieById(req: Request, res: Response) {
   try {
     const id = req.params.id;
@@ -31,6 +34,7 @@ export async function findMovieById(req: Request, res: Response) {
   }
 }
 
+// Seleciona todos os filmes registrados no banco, sem filtro
 export async function getAllMovies(req: Request, res: Response) {
   try {
     const movies = await MovieModel.find();
@@ -40,6 +44,7 @@ export async function getAllMovies(req: Request, res: Response) {
   }
 }
 
+// Deleta um dado por id junto ao db
 export async function removeMovie(req: Request, res: Response) {
   try {
     const id = req.params.id;
@@ -57,6 +62,7 @@ export async function removeMovie(req: Request, res: Response) {
   }
 }
 
+// Atualiza um dado por id junto ao db
 export async function updateMovie(req: Request, res: Response) {
   try {
     const id = req.params.id;
