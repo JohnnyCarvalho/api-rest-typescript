@@ -33,3 +33,5 @@ Primeiramente deve-se baixar o projeto, em seguida deve-se seguir o seguinte pas
 ```
 npm install @types/config @types/express @types/mongoose @types/morgan @types/node ts-node-dev typescript --save-dev
 ```
+
+Em seguida é só rodar o comando ```npm run dev```
